@@ -23,13 +23,13 @@ A simple command-line Contact Manager written in pure Go (Golang) with no third-
 - clone repository
 
 ```bash
-    git clone https://github.com/your-username/cli-contact-manager.git
+   git clone git@github.com:Dwipasca/contact-management.git
 ```
 
 - navigate to project repository
 
 ```bash
-    cd contact-manager
+    cd contact-management
 ```
 
 - run the application
@@ -41,5 +41,5 @@ A simple command-line Contact Manager written in pure Go (Golang) with no third-
 - build the binary (optional)
 
 ```bash
-    go build -o contact-manager
+    go build -o contact-management
 ```
