@@ -4,10 +4,10 @@ A simple command-line Contact Manager written in pure Go (Golang) with no third-
 
 ## Features
 
-- Add a single or multiple contacts
-- Edit and delete existing contacts
-- List all saved contacts
-- Search contacts by ID, name, or email
+- Add, edit, and delete contacts
+- Add multiple contacts at once
+- List all contacts
+- Search contacts by id, name, or email
 - Export contacts to JSON or CSV
 - Import contacts from JSON or CSV
 - Interactive CLI interface using `bufio.Scanner`
@@ -41,5 +41,39 @@ A simple command-line Contact Manager written in pure Go (Golang) with no third-
 - build the binary (optional)
 
 ```bash
-    go build -o contact-management
+    go build -o contact-management-app ./cmd/main.go
 ```
+
+- run application
+
+```bash
+    ./contact-management-app
+```
+
+## Usage
+
+The application provides a menu-driven interface with the following options:
+
+1. Add Contact
+2. Add Multiple Contacts
+3. Edit Contact
+4. Delete Contact
+5. Show List Contact
+6. Search Contact
+7. Export Contacts
+8. Import Contacts
+9. Exit
+
+Follow the on-screen prompts to use each feature.
+
+## Project Structure
+
+This project follows the [golang-standards/project-layout](https://github.com/golang-standards/project-layout) guidelines:
+
+- `/cmd` - Main applications
+- `/internal` - Private application code
+  - `/domain` - Domain models
+  - `/repository` - Data access layer
+  - `/usecase` - Business logic
+  - `/handler` - UI handlers
+- `/ui` - User interface utilities
